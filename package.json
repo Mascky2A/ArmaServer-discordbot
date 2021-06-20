@@ -1,0 +1,23 @@
+{
+  "name": "armaonlinebot",
+  "version": "1.0.0",
+  "description": "read readme.md",
+  "main": "index.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mascky2A/armaonlinebot.git"
+  },
+  "author": "Mascky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mascky2A/armaonlinebot/issues"
+  },
+  "homepage": "https://github.com/Mascky2A/armaonlinebot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "gamedig": "^3.0.5"
+  }
+}

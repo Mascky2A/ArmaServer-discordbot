@@ -2,7 +2,9 @@
 Запуск: node index.js
 
 Бот может быть переделан под мониторинг сервера другой игры, но в основном он затачивался под ArmA 3.
-Бот предназначен для установки на один дискорд сервер.
+Бот предназначен для установки на один конкретный дискорд сервер.
+
+Настройка производится в файле index.js и config.json.
 
 Бот выводит онлайн в статус по формату 'Online: ТекущееКоличествоИгроков/МаксимальноеКоличествоИгроков'
 
@@ -12,7 +14,9 @@
 Start: node index.js
 
 Bot can be remade for monitoring the server of another game, but it was mainly sharpened for ArmA 3.
-Bot is designed to be installed on one discord server.
+Bot for installation on one specific discord server.
+
+The settings are made in the index.js and config.json files.
 
 Bot displays his status to the format: 'Online: CurrentNumberofPlayers/MaximumNumberofPlayers'.
 
