@@ -6,8 +6,7 @@
 
 Настройка производится в файле index.js и config.json.
 
-Бот выводит онлайн в статус по формату 'Online: ТекущееКоличествоИгроков/МаксимальноеКоличествоИгроков'
-Команда online, для просмотра игроков находящихся на сервере
+
 
 
 # ENG
@@ -17,6 +16,3 @@ Bot can be remade for monitoring the server of another game, but it was mainly s
 Bot for installation on one specific discord server.
 
 The settings are made in the index.js and config.json files.
-
-Bot displays his status to the format: 'Online: CurrentNumberofPlayers/MaximumNumberofPlayers'.
-Command online, to view players on the server.
