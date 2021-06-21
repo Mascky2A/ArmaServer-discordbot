@@ -46,7 +46,7 @@ client.on('ready', async () => {
     setInterval(() => {
        const dt = new Date();
 
-			if(dt.getHours() == 2){
+			if(dt.getMinutes() === 00){
 				functions.report(client, settings, gamedig);
 			}
     }, 60000);
