@@ -1,14 +1,17 @@
 const Discord = require('discord.js');
 const gamedig = require('gamedig');
-const config = require('./config.json')
-const functions = require('./functions.js')
+
 const client = new Discord.Client()
 
+const config = require('./config.json')
+const functions = require('./functions.js')
+
 const settings = {
-    PREFIX: "PREFIX",
-    IP: "a3.hwrp.ru",
-    PORT: "2302",
-    REPORT_CHANNEL: "CHANNEL ID"
+    PREFIX: config.prefix,
+    IP: config.ip,
+    PORT: config.port,
+    REPORT_CHANNEL: config.rchannel,
+    FINALONLINE_CHANNEL: config.fochannel
 }
 
 client.on('ready', async () => {
@@ -45,7 +48,6 @@ client.on('ready', async () => {
 
     setInterval(() => {
        const dt = new Date();
-
 			if(dt.getMinutes() === 00){
 				functions.report(client, settings, gamedig);
 			}

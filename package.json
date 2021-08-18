@@ -1,17 +1,17 @@
 {
-  "name": "armaonlinebot",
-  "version": "1.0.0",
+  "name": "armaserver-discordbot",
+  "version": "1.0.1",
   "description": "read readme.md",
   "main": "index.js",
   "scripts": {
-    "test": "none"
+    "start": "node index"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Mascky2A/armaonlinebot.git"
   },
   "author": "Mascky",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Mascky2A/armaonlinebot/issues"
   },

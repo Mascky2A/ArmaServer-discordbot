@@ -58,5 +58,4 @@ module.exports = {
     .setTimestamp()
     message.channel.send(emb)
     }
-
 }

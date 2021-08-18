@@ -1,18 +1,22 @@
 # RU
-Запуск: node index.js
+Запуск:
+1. npm install
+2. node index.js или npm start
 
 Бот может быть переделан под мониторинг сервера другой игры, но в основном он затачивался под ArmA 3.
 Бот предназначен для установки на один конкретный дискорд сервер.
 
-Настройка производится в файле index.js и config.json.
+Настройка производится в файле config.json.
 
 
 
 
 # ENG
-Start: node index.js
+Start:
+1. npm install
+2. node index.js or npm start
 
 Bot can be remade for monitoring the server of another game, but it was mainly sharpened for ArmA 3.
 Bot for installation on one specific discord server.
 
-The settings are made in the index.js and config.json files.
+The settings are made in config.json.
