@@ -1,7 +1,13 @@
-const Discord = require('discord.js');
 const gamedig = require('gamedig');
+const { Client, Intents } = require('discord.js');
 
-const client = new Discord.Client()
+const client = new Client({ 
+    intents: [
+    Intents.FLAGS.GUILDS, 
+    Intents.FLAGS.GUILD_MESSAGES
+] 
+});
+
 
 const config = require('./config.json')
 const functions = require('./functions.js')
@@ -48,16 +54,18 @@ client.on('ready', async () => {
 
     setInterval(() => {
        const dt = new Date();
-			if(dt.getMinutes() === 00){
+			if(dt.getHours() == 0){
 				functions.report(client, settings, gamedig);
 			}
+
+            functions.getonline(gamedig, settings, client)
     }, 60000);
+
 
 })
 
-client.on('message', async message => {
+client.on('messageCreate', async message => {
     if(!message.content.startsWith(settings.PREFIX)) return;
-    
 
 	const commandBody = message.content.slice(settings.PREFIX.length);
 	const args = commandBody.split(' ');
